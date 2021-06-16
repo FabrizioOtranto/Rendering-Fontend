@@ -1,0 +1,167 @@
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #c0c0c0;" >
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-center  mb-4 mb-md-0">
+            <h6 class="mb-1">Get connected with us on social media!</h6>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-center"  >
+
+            <!-- Twitter -->
+            <a  rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                <i class="fab fa-twitter white-text mr-4"></i>
+                <p class="d-lg-none d-xl-none">Twitter</p>
+              </a>
+            <!-- Facebook -->
+            <a  rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                <i class="fab fa-facebook-square white-text mr-4"></i>
+                <p class="d-lg-none d-xl-none">Facebook</p>
+              </a>
+            <!--Instagram-->
+            <a  rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                <i class="fab fa-instagram white-text mr-4"></i>
+                <p class="d-lg-none d-xl-none">Instagram</p>
+              </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company Name</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+          </p>
+
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" >
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+         
+          <div *ngFor="let project of projects" class="" >
+            <div *ngIf = "project.view == 1"style=" margin-bottom: 11%!important">
+            <a class="link-footer"[routerLink]= "['/pvista/'+project._id]" 
+            [routerLinkActive]="['actived']"style=" padding-bottom: 20;" >{{project.name}}</a>
+          </div>
+
+          <div *ngIf = "project.view == 4"style=" margin-bottom: 11%!important">
+            <a class=" link-footer"[routerLink]= "['/3dvideo/'+project._id]" 
+            [routerLinkActive]="['actived']" style=" padding-bottom: 20%!important; margin-bottom: 10%!important;">{{project.name}}</a>
+          </div>
+        </div>
+
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" >
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold"> More Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+         
+          <div *ngFor="let project of projects" class="">
+
+
+          <div *ngIf = "project.view == 2"style=" margin-bottom: 11%!important">
+            <a class="link-footer"[routerLink]= "['/aerial/'+project._id]" 
+            [routerLinkActive]="['actived']" style=" margin-bottom: 20%;" >{{project.name}}</a>
+          </div>
+
+          <div *ngIf = "project.view == 3"style=" margin-bottom: 11%!important">
+            <a class=" link-footer"[routerLink]= "['/about/'+project._id]" 
+            [routerLinkActive]="['actived']" style=" padding-bottom: 20%;">{{project.name}}</a>
+          </div>
+
+
+        </div>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a [routerLink]= "['/index']"class="link-footer">Index</a>
+          </p>
+          <p>
+            <a [routerLink]= "['/portfolio']"class="link-footer">Portfolio</a>
+          </p>
+          <p>
+            <a [routerLink]= "['/prices']"class="link-footer">Prices</a>
+          </p>
+          <p>
+            <a [routerLink]= "['/about']"class="link-footer">About us</a>
+          </p>
+          <p>
+            <a [routerLink]= "['/contact']"class="link-footer">Contact</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="now-ui-icons location_pin"></i> Direccion
+          </p>
+          <p>
+            <i class="now-ui-icons ui-1_email-85"></i> info@example.com
+          </p>
+          <p>
+            <i fas icon="phone" class="mr-3"></i> + numero telefono
+          </p>
+          <p>
+            <i fas icon="print" class="mr-3"></i> + numero telefono
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a [routerLink]= "['/index']" class="link-footer"> nombre pagina web</a>
+    </div>
+    <!-- Copyright -->
+    </div>
+
+  </footer>
+  <!-- Footer -->

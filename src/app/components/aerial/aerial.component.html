@@ -1,0 +1,228 @@
+<section>
+  
+<div _ngcontent-c4="" class="" style="margin-top: 5%; width: 98%;">
+    <div _ngcontent-c4="" class="row">
+        <div _ngcontent-c4="" class="col-md-4">
+            <div  _ngcontent-c4=""  style='font-size: 400%; margin-top: 10%; margin-left: 30%;' data-aos="zoom-in-down">
+                {{project.name}}</div>
+
+        </div>
+        <div class="card " style="width: 55rem; background-color: white; box-shadow: none;margin-top: 2%; font-size: 120%; text-align: left; " >
+            <div class="card-body" >
+                    <p class = 'card-text card-long'data-aos='zoom-in-up'>
+                        {{project.description}}
+                    </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div _ngcontent-c4=""  style='font-size: 400%;'>
+    <div class="card card-title-fix-aerial">
+      <div class="" > 
+    <ul>
+    <li 
+      @fade
+      *ngFor="let miniproject of miniProject" class="  img-fix-2">
+      <div *ngIf = "miniproject.category == project.category">
+        <span class = 'aerial-name'><strong>{{miniproject.name}}</strong></span>
+        <div class = 'img img-aerial-fix'>
+          <div *ngIf = "miniproject.view == 1">
+          <a [routerLink]= "['/project/detail/'+miniproject._id]" class="link-footer">
+        <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+      </a> 
+    </div>
+
+    <div *ngIf = "miniproject.view == 2">
+      <a [routerLink]= "['/project/detail/second/'+miniproject._id]" class="link-footer">
+    <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+  </a> 
+</div>
+      
+      </div>
+      </div>
+      
+     </li>
+    </ul>
+</div>
+</div>
+</div>
+
+
+<div _ngcontent-c4=""  class = 'project-subtitle-aerial-fix'>
+
+  <strong>{{project.subtitle}}</strong>
+ 
+ </div>
+
+  <div class="card card-body-fix-aerial">
+    <div class="card-body" > 
+  
+     <div _ngcontent-c4=""  >
+      <div _ngcontent-c4="" class="row" >
+          
+            <div _ngcontent-c4="" class="col-md-4" >
+              <img _ngcontent-gam-c118="" src="{{url+'get-image/'+project.image[0]}}" alt="Image" class="img-fluid" style=" margin-left: 15%;">
+    
+          </div>        
+          <div _ngcontent-c4="" class="col-md-6">
+  
+  
+     <div class="container">
+      <div class="row">
+        <div class = 'collapse-text' data-aos='fade-up'>
+          <div>
+          <p class = 'paragraph-fix'>{{project.firstP}}</p> 
+           <p class = 'paragraph-fix'>{{project.secondP}}</p> 
+          </div>
+       
+          <div class="accordion-item">
+           
+           <div id="collapseText" class="accordion-collapse collapse" aria-labelledby="headingText" data-bs-parent="#accordionExample"data-aos='fade-up'>
+             <div class="accordion-body">
+               <p class = 'paragraph-fix'>{{project.thirdP}}</p> 
+                 <p class = 'paragraph-fix'>{{project.fourthP}}</p> 
+
+                 <div *ngIf = "project.name == '3D FLOOR PLAN'" class= 'paragraph-fix'>
+                  <p><strong>Top 3 Benefits of Getting a Professional 3D Floor Plan</strong></p>
+                  <p> There are numerous benefits in utilising 3D Floor Plans in your projects and we will work with you to ensure maximum benefit is achieved. </p>
+
+                  <ul>
+                    <li class="li-fix">
+                      Clear Vision: 3D Floor Plans allow users to view the property in a clear way, which is not only beneficial for prospective buyers, but also for those completing renovations. Having comprehensive plans that display the spatial dimensions as well as giving a feel of the space and how it can be used is a great advantage. 
+                    </li>
+                    <li class="li-fix">
+                      Reduced Error: Further, having such comprehensive plans can allow any potential errors or design flaws to be identified prior to construction starting. This additional quality control is definitely a great benefit. 
+                    </li>
+                    <li class="li-fix">
+                      Cost-Effective: Additionally, it gives them the opportunity to test out different colours and textures via the floor plan rendering to determine which they like best, compared to having to spend money on samples and additional labour. 
+                    </li>
+                  </ul>
+
+                 </div>
+             </div>
+           </div>
+           <h2 class="accordion-header" id="headingText">
+             <a role="button"  class = 'collapse-button' data-toggle="collapse" data-parent="#accordion" href="#collapseText" aria-expanded="true" aria-controls="CollapseText">
+               read more
+             </a>
+           </h2>
+         </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  
+<div _ngcontent-c4="" class='faq-content-fix' style = 'margin-left: 24%' data-aos='fade-right'>
+
+  <strong>Frequentyl Asked Question</strong></div>
+
+ <div class="card card-faq-fix" >
+ <div class="card-body" > 
+
+  <div _ngcontent-c4=""  style="margin-top: 2%;">
+   <div _ngcontent-c4="" >   
+       <div _ngcontent-c4="" >
+
+        
+
+  <div class="container">
+   <div >
+     <div  id="main">
+       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+         <div class="panel panel-default panel-faq">
+           <div class="panel-heading" role="tab" id="headingFaqOne">
+             <h6 class="panel-title" >
+               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqOne" aria-expanded="true" aria-controls="collapsFaqeOne">
+                WHAT IS INCLUDED IN OUR 3D FLOOR PLAN DELIVERABLE?
+             </a>
+             </h6>
+           </div>
+           <div id="collapseFaqOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqOne">
+             <div class="panel-body">
+               <p>
+                A 3D Floor Plan includes additional illustrations such as furniture and colours, as well as other features such as interior walls, windows, electrical appliances and sinks and 3 rounds of revisions.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqTwo">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqTwo" aria-expanded="true" aria-controls="collapsFaqeTwo">
+                HOW IS THIS DIFFERENT FROM A 2D FLOOR PLAN?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqTwo">
+            <div class="panel-body">
+              <p>
+                A 3D Floor Plan is much more realistic compared to 2D plans. Additionally, they also serve different purposes; 3D plans help understand the space and are more exact, whereas 2D plans are generally used to see the size of the property.               </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqThree">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">
+                WHAT IS THE ADVANTAGE OF HAVING A 3D FLOOR PLAN?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqThree">
+            <div class="panel-body">
+              <p>
+                Having a 3D Floor Plan, as mentioned earlier, is more exact than a 2D plan. They are also easier to interpret and give a better visualisation of the space available and feel of the property.               </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqFour">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqFour" aria-expanded="true" aria-controls="collapsFaqeFour">
+                WHAT DO I NEED TO PROVIDE?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqFour">
+            <div class="panel-body">
+              <p>
+                For us to get started, we will need your 2D floor plan (either CAD or PDF file) and any specifications of finishings or textures you would like included. Our team will work with you to ensure we have everything we need.                 </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqFive">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqFive" aria-expanded="true" aria-controls="collapsFaqFive">
+                HOW MUCH DO OUR 3D FLOOR PLANS COST?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqFive">
+            <div class="panel-body">
+              <p>
+                Our prices vary based on the size and requirements of your plan due to their custom nature. If you are interested in receiving a quote, please contact us.              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>

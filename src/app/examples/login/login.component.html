@@ -1,0 +1,45 @@
+<section>
+<ng-container *ngIf = '!Authservice.loggedIn(); else loggedIn ' >
+<div class="page-header" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+    <div class="container">
+        <div class="col-md-4 mx-auto">
+            <div class="card card-login card-plain " style = 'padding-top: 30%;' >
+                <form #userForm = 'ngForm' (ngSubmit)='login()'>
+                    <div class="card-header text-center">
+                        <div class="logo-container" >
+                            <img src="assets/img/now-logo.png" alt="">
+                        </div>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="content">
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="input-group-prepend">
+                            <label for ='user' class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></label>
+                        </div>
+                          <input type="text"[(ngModel)]='user.user' name ='user'  class="form-control" placeHolder = 'user' (focus)="focus=true" (blur)="focus=false" >
+                        </div>
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                            <label for="password" class="input-group-text"><i class="now-ui-icons text_caps-small"></i></label>
+                        </div>
+                          <input type="password" [(ngModel)]='user.password' name ='password' placeHolder = 'paswword' class="form-control" (focus)="focus1=true" (blur)="focus1=false"/>
+                        </div>
+                    </div>
+                    <div class="footer text-center">
+                        <input type="submit" value = "login" class="btn btn-primary btn-round btn-lg btn-block" (blur)="focus1=false"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</ng-container>
+
+<ng-template class = 'noAdmin' #loggedIn>
+    <a (click) = 'redirect()' class = 'button-delete'>You are already logged in, click here to be redirected</a>'
+</ng-template>
+</section>

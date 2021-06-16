@@ -1,0 +1,124 @@
+<section class="section">
+    <div class="container">
+
+        <div class="shadow-box">
+                <p>
+                Edit <br>
+                <strong id='us'>Message</strong>
+               </p>
+        </div>
+
+<form #projectForm="ngForm" (ngSubmit)="onSubmit()" class = 'formclass'>
+
+    <div class="field">
+      <input type="text" name="firstName" id="fname" placeholder="Your First Name" [(ngModel)]="formContact.firstName" required>
+    </div>
+
+    <div class="field">
+        <input type="text" name="lastName" id="lname" placeholder="Your Last Name" [(ngModel)]="formContact.lastName" required>
+      </div>
+  
+    
+    <div class="field">
+      <input type="email" name="email" id="email" placeholder="Your Email" [(ngModel)]="formContact.mail" required>
+    </div>
+
+    <div class="field">
+        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Your phone number" [(ngModel)]="formContact.phoneNumber" required>
+      </div>
+    <div style='padding-bottom: 5%;'>
+       
+        <label>Area of interest</label>
+
+        <main class = 'container' style = 'box-shadow: none;'>
+            <div class ='row'>
+                <div class = 'card-columns'>
+                    
+                    <div class="form-check">
+                        <label class="form-check-label label-fix" >
+                            <input class="form-check-input" name="interiorRendering" type="checkbox" value="" [(ngModel)]="formContact.interiorRendering">
+                            Interior Rendering
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                       
+                        <label class="form-check-label label-fix-aerial">
+                            <input class="form-check-input" name="aerialRendering" type="checkbox" value="" [(ngModel)]="formContact.aerialRendering">
+                            Aerial Rendering
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                        
+                        <label class="form-check-label label-fix">
+                            <input class="form-check-input" name="exteriorRendering" type="checkbox" value="" [(ngModel)]="formContact.exteriorRendering">
+                            Exterior Rendering
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                        
+                        <label class="form-check-label label-fix" >
+                            <input class="form-check-input" name="productRendering" type="checkbox" value="" [(ngModel)]="formContact.productRendering">
+                            Product Rendering
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+
+                        <label class="form-check-label label-fix">
+                            <input class="form-check-input" name="tresDVideo" type="checkbox" value="" [(ngModel)]="formContact.tresDVideo">
+                            3D video
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+            
+                        <label class="form-check-label label-fix">
+                            <input class="form-check-input" name="virtualRendering" type="checkbox" value="" [(ngModel)]="formContact.virtualRendering">
+                            Virtual Rendering
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+            
+                        <label class="form-check-label label-fix">
+                            <input class="form-check-input" name="tresDFlorPlan" type="checkbox" value="" [(ngModel)]="formContact.tresDFlorPlan">
+                            3D Floor Plan
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+
+                        <label class="form-check-label label-doble-fix">
+                            <input class="form-check-input" name="photomontage" type="checkbox" value="" [(ngModel)]="formContact.photomontage">
+                            photomontage
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+
+                        <label class="form-check-label label-doble-fix">
+                            <input class="form-check-input" name="visto" type="checkbox" value="" [(ngModel)]="formContact.visto">
+                            Visto
+                            <span class="form-check-sign">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                    </div>
+        </div>
+        </div>
+        </main>
+    </div>
+    
+    <div class="field">
+      <textarea class="textarea" name="message" placeholder="Tell us about your interest" [(ngModel)]="formContact.description" required></textarea>
+    </div>
+  
+    <input type="submit"  class="btn btn-default" value = 'submit' [disabled]="!projectForm.form.valid"/>
+  
+  </form >
+    </div>
+    </section>
+

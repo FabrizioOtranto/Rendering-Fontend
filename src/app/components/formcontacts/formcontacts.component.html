@@ -1,0 +1,48 @@
+
+<section class="section" style=' margin-bottom: 0% !important; padding-bottom: 0%! important;'>
+    <div class="container" style="margin-left: 0% !important;">
+        <div class="shadow-box">
+            <p>
+                 <br>
+                <strong id='us'>Messages</strong>
+            </p>
+        </div>
+
+
+        <div style='margin-top: 5%;'>
+            <main class = 'container' style = 'box-shadow: none; margin-left: 0% !important;'>
+                <div class ='row'>
+                    <div class = '' style="margin-left: 0%!important; margin-right:0% !important; padding-left: 0%!important; padding-right: 0% !important;" >
+            <ul>
+                <li *ngFor="let formContact of formContact" class="project">
+                   
+
+                    <div class="card" style="width: 60rem; background-color: #dddddd;">
+                        <div class="card-text" style="margin-bottom: 1% !important; padding: 1%;" >
+                            <div *ngIf = "formContact.visto == true"> 
+                            <div class="card-text name" style='font-size: 150%; color: green;'><strong>{{formContact.firstName}} {{formContact.lastName}}</strong>
+                                <p class = 'date'>{{formContact.date}}</p>
+                            </div>  
+                        </div>
+                  
+
+                    <div *ngIf = "formContact.visto == false"> 
+                        <div class="card-text name" style='font-size: 150%; color: red;'><strong>{{formContact.firstName}} {{formContact.lastName}}</strong>
+                            <p class = 'date'>{{formContact.date}}</p>
+                        </div>  
+                    </div>
+                </div>
+
+                        
+                        <div class = 'card-text description' >{{formContact.description}}</div>
+                        <a class = 'link' style = 'color: #333' [routerLink] = "['/messages', formContact._id]">
+                            <p class = 'link-fix'>Show complete message</p>
+                        </a>
+                    </div>
+                    
+                   
+                </li>
+            </ul>
+        </div>
+        </div>
+    </main>

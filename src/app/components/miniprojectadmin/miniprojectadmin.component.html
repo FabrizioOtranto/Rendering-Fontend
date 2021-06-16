@@ -1,0 +1,43 @@
+<section class="section">
+    <div class="container">
+        <div class="shadow-box">
+            <p>
+                Your <br>
+                <strong id='us'>Mini Projects</strong>
+            </p>
+        </div>
+    
+        <div style='margin-top: 10%;'>
+            <main class = 'container container-fix'>
+                <div class ='row'>
+                    <div class = 'card-columns card-columns-fix'>
+               
+                <ul>
+                    <li *ngFor="let miniproject of miniProject" class="project project-fix">
+                        <div class="card card-fix animate__animated animate__bounceIn animate__delay-2s " style="width: 18rem;" >
+                            <div class="card-body"> 
+                                   
+                                        <div class=""  *ngIf="miniproject.image">
+                                            <img  class = 'img img-fix-mini' src="{{url+'get-image/'+miniproject.image[0]}}"/>
+                                        </div>
+    
+                                <p class="card-text text-fix" style='font-size: 150%;'><strong>{{miniproject.name}}</strong></p>
+                                
+                               
+                                    <a [routerLink]= "['/edit/miniproject/'+miniproject._id]" class="link-footer">Edit</a>
+                             
+    
+
+                                
+                            </div>
+                        </div>
+                   
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </main>
+            </div>
+</div>
+ 
+    </section>

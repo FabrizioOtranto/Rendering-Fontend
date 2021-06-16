@@ -1,0 +1,115 @@
+.img-fix{
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+}
+
+.shadow-box{
+    padding-top: 50%;
+    box-sizing: content-box;
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    border-left: 2px solid black;
+    margin-left: 200px;
+    padding-bottom: 5%;
+    font-size: 30px;
+  }
+
+.project{
+	list-style: none;
+}
+.project-name{
+    background-color: #dddddd;
+    color: #222;
+    padding: 5%;
+
+}
+
+.project-price{
+    background-color: white;
+    color: #555d76;
+}
+
+.text{
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+
+.card-short{
+    font-size: 150%; 
+    text-align: center;
+}
+
+.card-long{
+    color: #434343;
+    text-align: center;
+
+}
+
+.img-logo{
+    margin-top: 2.5%; 
+    width: 20%; 
+    margin-left: 75px;
+    padding-bottom: 3px;
+}
+
+
+.texto{
+    padding-top: 1%; 
+    padding-bottom: 1%;
+    margin-left: 30%;
+}
+
+#accordion .panel-heading { padding: 0;}
+#accordion .panel-title > a {
+	display: block;
+	padding: 0.4em 0.6em;
+    outline: none;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before  {
+    content:"-";
+    float: left;
+    font-family: 'Glyphicons Halflings';
+	margin-right :1em;
+}
+
+
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before  {
+    content:"-";
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::after  {
+    content:">";
+    float: right;
+    font-family: 'Glyphicons Halflings';
+	margin-right :1em;
+}
+
+
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::after  {
+    content:">";
+}
+
+.collapse-text{
+    margin-left: 14%;
+    margin-right: 15%;
+    font-size: 130%;
+    text-align: justify;
+}
+
+.collapse-button{
+    font-size: 35%;
+    margin-left: 44%;
+}
+
+.panel-faq{
+    font-size: 150%;
+}
+
+.int.description{
+    font-size: 140%;
+}

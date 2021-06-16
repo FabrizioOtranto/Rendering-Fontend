@@ -1,0 +1,82 @@
+
+
+<section class="section">
+    <div class="container">
+        <div class="shadow-box" style="margin-bottom: 15%;">
+                <p>
+                Edit <br>
+                <strong id='us'>Mini Project</strong>
+               </p>
+        </div>
+        <div class = 'message success' *ngIf = "status == 'success'">
+          <span class = 'success'>El proyecto se ha editado correctamente, puedes verlo <a [routerLink]="['/projects/miniprojects']">aqui</a></span>
+      </div>
+           
+      <div class = 'message' *ngIf = "status == 'failed'">
+         <span class = 'failed'> El proyecto no se ha podido editar</span>
+      </div>
+
+<form #projectForm (ngSubmit)="onSubmit(projectForm)" class = 'formclass'>
+
+    <div class="field">
+      <input type="text" name="name" id="fname" placeholder="Name" [(ngModel)]="miniProject.name" required>
+    </div>
+
+    <div class="field">
+        <input type="text" name="category" id="lname" placeholder="Category" [(ngModel)]="miniProject.category" required>
+      </div>
+
+      <select class="form-select" name ='view'  aria-label="Default select example" [(ngModel)]="miniProject.view">
+        <option value=1>First view</option>
+        <option value=2>Second view</option>
+      </select>
+    
+    <div class="field">
+      <textarea class="textarea" name="message" placeholder="Describe the project" [(ngModel)]="miniProject.description" required></textarea>
+    </div>
+
+    <div class ='row'>
+      <div class = 'card-columns'>
+      <ul style="padding-inline-start: 0px !important; margin-left: 10%;">
+        <li *ngFor = 'let image of miniProject.image' class ='image-list'>
+          <div class="card card" style=" width: 10rem; height: 5rem; background-color: #333; box-shadow: none; " >
+            <div class="card-body" style =' margin-left: 0%; margin-right: 0%; padding: 0% !important; padding-bottom: 10%; margin-bottom: 0%;' > 
+      <div class = 'image img-fix' *ngIf='miniProject.image' style = 'float: none;'> 
+          <img src = "{{url + 'get-images/'+ image}}" /></div>
+        </div>
+      </div>
+        </li>
+    </ul>
+  </div>
+
+  <input type = 'file' name = 'image' placehodlder = 'Subir Imagen'(change)='fileChangeEvent($event)'/>
+  </div>
+
+    <div class= 'container' >
+      <p *ngIf = 'confirm == false'>
+        <button type="submit"  class="btn btn-default btn-edit">Editar</button>
+      <a (click) = 'setConfirm(true)' class = 'btn btn-danger left btn-borrar'> Borrar</a>
+      </p>
+      
+      <p *ngIf = 'confirm == true' class = 'setConfirm'>
+      <span class = 'confirm'>Estas seguro de eliminar este proyecto?</span>
+          <a (click) = "setConfirm(false)" class = 'btn btn-default'>cancelar</a>
+          <a (click) = 'deleteMiniProject(miniProject._id)' class = 'btn btn-danger ' [routerLink]="['/projects/miniprojects']"> Eliminar definitivamente</a>'
+          </p>
+        </div>
+        </form>
+
+        <form #projectForm2 (ngSubmit)="removeImage(projectForm2)" class = 'formclass'>
+
+          <div class="field">
+            <label for = 'image' style="font-size: 150%; margin-left: 32%;"> Remove image </label>
+              <input type="text" name="image" id="mail" placeholder="image" [(ngModel)]="miniProject.image" required>
+            </div>
+
+          <button type="submit"  class="btn btn-default btn-edit-image">Submit</button>
+      
+          
+        </form>
+       
+      </div>
+      </section>

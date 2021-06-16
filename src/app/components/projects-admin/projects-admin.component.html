@@ -1,0 +1,46 @@
+<section class="section">
+    <div class="container">
+        <div class="shadow-box">
+            <p>
+                Your <br>
+                <strong id='us'>Projects</strong>
+            </p>
+        </div>
+    
+        <div style='margin-top: 4%;'>
+            <main class = 'container container-fix'>
+                <div class ='row'>
+                    <div class = 'card-columns card-columns-fix'>
+               
+                <ul>
+                    <li *ngFor="let project of projects" class="project project-fix">
+                        <div class="card card-fix card animate__animated animate__bounceIn animate__delay-2s " style="width: 18rem;" >
+                            <div class="card-body"> 
+                                   
+                                        <div class=""  *ngIf="project.image">
+                                            <img  class = 'img-img-fix' src="{{url+'get-image/'+project.image[0]}}"/>
+                                        </div>
+    
+                                <p class="card-text text-fix" style='font-size: 150%;'><strong>{{project.name}}</strong></p>
+                                
+                               
+                                    <a [routerLink]= "['/edit/project/'+project._id]" class="link-footer">Edit</a>
+                             
+    
+
+                                
+                            </div>
+                        </div>
+                   
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </main>
+            </div>
+
+     
+
+</div>
+ 
+    </section>

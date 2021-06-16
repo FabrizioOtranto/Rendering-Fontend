@@ -1,0 +1,71 @@
+<section class="section">
+    <div class="container">
+    <div class = '' style = '  box-shadow: none;'> 
+        <div class = 'card-body'>
+            <div _ngcontent-c4="" class="container">
+                <div _ngcontent-c4="" class="row">
+                    <div _ngcontent-c4="" class="col-md-4 col-sm-12">
+                        <div _ngcontent-c4=""  style='font-size: 400%; margin-top: 15%; margin-left: 5%;'>
+                            Our<br>
+                           <strong>  services</strong></div>
+        
+                    </div>
+                    <div class="card " style="width: 40rem; background-color: white; box-shadow: none;margin-top: 3%; font-size: 150%; text-align: left;" >
+                        <div class="card-body" class = 'animate__animated animate__fadeInRight animate__delay-1s'>
+                                <p class = 'card-text card-long'>
+                                    Send us the CAD files and material list with reference images. The first draft in low resolution will be ready within 7 working days.
+                                    Send us the CAD files and material list with reference images. The first draft in low resolution will be ready within 7 working days.
+                                </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div style='margin-top: 5%;'>
+        <main class = 'container container-fix' >
+            <div class ='row'>
+                <div class = 'card-columns card-columns-fix'>
+           
+            <ul>
+                <li *ngFor="let project of projects" class="project project-fix">
+                    <div class="card  card-fix card animate__animated animate__bounceIn animate__delay-2s " style="width: 18rem;" >
+                        <div class="card-body"> 
+                               
+                                    <div class=""  *ngIf="project.image">
+                                        <img  class = 'img-img-fix' src="{{url+'get-image/'+project.image[0]}}"/>
+                                    </div>
+
+                            <p class="card-text" style='font-size: 150%;'><strong>{{project.name}}</strong></p>
+                            
+                            <div *ngIf = "project.view == 1"> 
+                                <a [routerLink]= "['/pvista/'+project._id]" class="link-footer">Learn MORE</a>
+                            </div>
+
+                            <div *ngIf = "project.view == 2"> 
+                                <a [routerLink]= "['/aerial/'+project._id]" class="link-footer">Learn MORE</a>
+                            </div>
+
+                            <div *ngIf = "project.view == 3"> 
+                                <a [routerLink]= "['/about/'+project._id]" class="link-footer">Learn MORE</a>
+                            </div>
+
+                            <div *ngIf = "project.view == 4"> 
+                                <a [routerLink]= "['/3dvideo/'+project._id]" class="link-footer">Learn MORE</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+               
+                </li>
+            </ul>
+        </div>
+        </div>
+        </main>
+        </div>
+    </div>
+    </section>
+    
+    

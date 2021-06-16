@@ -1,0 +1,255 @@
+<ng-container *ngIf = '!AuthService.loggedIn(); else loggedIn '>
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="400">
+    <div class="container">
+      <div class="dropdown button-dropdown">
+        <div ngbDropdown>
+            <a class="nav-link" ngbDropdownToggle [routerLink]= "['/index']" [routerLinkActive]="['actived']">
+            <img _ngcontent-gam-c118="" src="assets/img/logo-square.jpg" alt="Image" class="img-fluid img-logo">
+          </a>
+         </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+    </button>
+      
+        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <div class="btn-group nav-item">
+                  <a class = 'nav-link' type="button"  [routerLink]= "['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
+                  <a type="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu">
+                      
+                      <div *ngFor="let project of projects" class="project">
+                        <div *ngIf = "project.view == 1">
+                        <a class="dropdown-item"[routerLink]= "['/pvista/'+project._id]" 
+                        [routerLinkActive]="['actived']">{{project.name}}</a>
+                      </div>
+
+                      <div *ngIf = "project.view == 2">
+                        <a class="dropdown-item"[routerLink]= "['/aerial/'+project._id]" 
+                        [routerLinkActive]="['actived']">{{project.name}}</a>
+                      </div>
+
+                      <div *ngIf = "project.view == 3">
+                        <a class="dropdown-item"[routerLink]= "['/about/'+project._id]" 
+                        [routerLinkActive]="['actived']">{{project.name}}</a>
+                      </div>
+
+                      <div *ngIf = "project.view == 4">
+                        <a class="dropdown-item"[routerLink]= "['/3dvideo/'+project._id]" 
+                        [routerLinkActive]="['actived']">{{project.name}}</a>
+                      </div>
+                      </div>
+
+                  </div>
+                  </a>
+
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]= "['/examples/login']" [routerLinkActive]="['actived']">
+                    <p>Login</p>
+                  </a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]= "['/prices']" [routerLinkActive]="['actived']">
+                      <p>Price</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]= "['/about']" [routerLinkActive]="['actived']">
+
+                        <p>About us</p>
+                    </a>
+                </li>
+                        <li class="nav-item">
+                    <a class="nav-link" [routerLink]= "['/contact']" [routerLinkActive]="['actived']">
+                        <p>contact</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <p class="d-lg-none d-xl-none">Twitter</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <p class="d-lg-none d-xl-none">Facebook</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <p class="d-lg-none d-xl-none">Instagram</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <jjva-ngx-whatsapp-button class = 'nav-link'[ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"
+                  style='padding: 0.3rem 0.8rem;'>
+                  </jjva-ngx-whatsapp-button>
+                  
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</ng-container>
+
+<ng-template #loggedIn>
+
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="400">
+    <div class="container">
+      <div class="dropdown button-dropdown">
+        <div ngbDropdown>
+          <a class="nav-link" ngbDropdownToggle [routerLink]= "['/index']" [routerLinkActive]="['actived']">
+            <img _ngcontent-gam-c118="" src="assets/img/logo-square.jpg" alt="Image" class="img-fluid img-logo card animate__animated animate__zoomInDown animate__delay-4s" id = 'animate' >
+          </a>
+         </div>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  
+             
+
+                      <div class="btn-group nav-item">
+                        <a class = 'nav-link' type="button"  [routerLink]= "['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
+                        <a type="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <div class="dropdown-menu">
+                            <div *ngFor="let project of projects" class="project">
+                              <div *ngIf = "project.view == 1">
+                              <a class="dropdown-item"[routerLink]= "['/pvista/'+project._id]" 
+                              [routerLinkActive]="['actived']">{{project.name}}</a>
+                            </div>
+      
+                            <div *ngIf = "project.view == 2">
+                              <a class="dropdown-item"[routerLink]= "['/aerial/'+project._id]" 
+                              [routerLinkActive]="['actived']">{{project.name}}</a>
+                            </div>
+      
+                            <div *ngIf = "project.view == 3">
+                              <a class="dropdown-item"[routerLink]= "['/about/'+project._id]" 
+                              [routerLinkActive]="['actived']">{{project.name}}</a>
+                            </div>
+      
+                            <div *ngIf = "project.view == 4">
+                              <a class="dropdown-item"[routerLink]= "['/3dvideo/'+project._id]" 
+                              [routerLinkActive]="['actived']">{{project.name}}</a>
+                            </div>
+                          </div>
+                          </div>
+                        </a>
+                       
+                      </div>
+
+                    </li>
+
+
+                    <div class="btn-group nav-item">   
+                      <a type="button" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        Create
+                        <div class="dropdown-menu"style="color: black!important;">
+                         
+                           
+                            <a class="dropdown-item"[routerLink]= "['/create/project']" 
+                            [routerLinkActive]="['actived']" >Create Project</a>
+
+                            <a class="dropdown-item"[routerLink]= "['/create/miniproject']" 
+                            [routerLinkActive]="['actived']">Create MiniProject</a>
+
+                        </div>
+                      </a>
+                     
+                    </div>
+
+                    <div class="btn-group nav-item">
+                      <a type="button" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                        <div class="dropdown-menu">
+                         
+                           
+                            <a class="dropdown-item"[routerLink]= "['/projects/projects']" 
+                            [routerLinkActive]="['actived']"> Projects</a>
+
+                            <a class="dropdown-item"[routerLink]= "['/projects/miniprojects']" 
+                            [routerLinkActive]="['actived']"> MiniProjects</a>
+
+                        </div>
+                      </a>
+                     
+                    </div>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]= "['/messages']" [routerLinkActive]="['actived']">
+                    <p>messages</p>
+                  </a>
+              </li>
+                 
+             
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]= "['/prices']" [routerLinkActive]="['actived']">
+                      <p>Price</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]= "['/about']" [routerLinkActive]="['actived']">
+
+                        <p>About us</p>
+                    </a>
+                </li>
+                        <li class="nav-item">
+                    <a class="nav-link" [routerLink]= "['/contact']" [routerLinkActive]="['actived']">
+                        <p>contact</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <p class="d-lg-none d-xl-none">Twitter</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <p class="d-lg-none d-xl-none">Facebook</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <p class="d-lg-none d-xl-none">Instagram</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+
+                  <jjva-ngx-whatsapp-button class = 'nav-link'rel="tooltip"data-placement="bottom" [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"
+                  style='padding: 0.3rem 0.8rem;'></jjva-ngx-whatsapp-button>
+                  
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="LogOut" style = 'cursor:pointer' (click)='AuthService.logOut()'>
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p class="d-lg-none d-xl-none">LogOut</p>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>  
+</nav>
+
+</ng-template>

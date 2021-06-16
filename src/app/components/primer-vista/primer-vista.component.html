@@ -1,0 +1,282 @@
+<section style="margin-top: 5%;">
+        <div class="page-header" >
+          <div class="page-header-image" style="background-image:url({{url+'get-image/'+project.image[0]}})"></div>
+         
+                  <div class="card card-login card-plain " style = 'padding-top: 5%;' >
+                    <div _ngcontent-c4="" class="container" style="margin-top: 0%;">
+                      <div _ngcontent-c4="" class="row">
+                          <div _ngcontent-c4="" class="col-md-4">
+                              <div _ngcontent-c4="" class = 'animate__animated animate__fadeOutLeft animate__delay-4s'  style='font-size: 400%; margin-top: 10%; margin-left: 5%; color: #eee; ;'> 
+                  
+                              <strong>{{project.name}}</strong></div>
+                          </div>
+                          <div _ngcontent-c4="" class="col-md-8">
+                            <div _ngcontent-c4=""  class = 'animate__animated animate__fadeOutRight animate__delay-5s' style='font-size: 150%; color: #eee; margin-top: 8%; margin-left: 10%;'>
+                              <strong> {{project.description}}</strong></div>
+                
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+              
+          
+      </div>
+<div _ngcontent-c4="" class = 'our-projects'>
+    Our
+   <strong> Projects</strong>
+  </div>
+
+   
+   <main class='container' style="margin-left: 1% !important;">
+    <div class ='row'>
+      <div class = 'card-columns'>
+        <ul style="padding-inline-start: 0px !important;">
+          <li @fade *ngFor="let miniproject of miniProject" class=" project">
+            <div *ngIf = "miniproject.category == project.category">
+      <div class="card card-fix" style=" width: 30rem;" >    
+        <div class="card-body card-body-pvista-fix" style="width: 30rem;"> 
+          <div *ngIf = "miniproject.view == 1">
+          <a [routerLink]= "['/project/detail/'+miniproject._id]">
+        <div class = 'img-fix-3'>
+        <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+      </div>
+      </a>
+     </div>
+
+     <div *ngIf = "miniproject.view == 2">
+      <a [routerLink]= "['/project/detail/second/'+miniproject._id]">
+    <div class = 'img-fix-3'>
+    <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+  </div>
+  </a>
+ </div>
+    </div>
+  </div>
+</div>
+
+     </li>
+    </ul>
+
+</div>
+</div>
+</main>
+
+<div _ngcontent-c4="" class = 'project-subtitle-pvista-fix'>
+
+   <strong>{{project.subtitle}}</strong>
+  
+  </div>
+  
+  <div class = 'collapse-text' data-aos='fade-up'>
+   <div>
+   <p>{{project.firstP}}</p> 
+    <p>{{project.secondP}}</p> 
+   </div>
+
+   <div class="accordion-item">
+    
+    <div id="collapseText" class="accordion-collapse collapse" aria-labelledby="headingText" data-bs-parent="#accordionExample" data-aos='fade-up'>
+      <div class="accordion-body" >
+        <p>{{project.thirdP}}</p> 
+          <p>{{project.fourthP}}</p> 
+      </div>
+    </div>
+    <h2 class="accordion-header" id="headingText">
+      <a role="button"  class = 'collapse-button' data-toggle="collapse" data-parent="#accordion" href="#collapseText" aria-expanded="true" aria-controls="CollapseText" >
+        read more
+      </a>
+    </h2>
+  </div>
+</div>
+
+<div *ngIf = "project.name == 'Interior Rendering'"> 
+
+  <div class="card card-int-fix-pvista" style=" box-shadow: none;">
+    
+  <div class="card-body" style="box-shadow: none;" > 
+
+   <div _ngcontent-c4="">
+    <div _ngcontent-c4="" class="row">
+        
+          <div _ngcontent-c4="" class="col-md-6" >
+            <img _ngcontent-gam-c118="" src="assets/img/bg1.jpg" alt="Image" class="img-fluid" style="margin-top: 2.5%;">
+        </div>  
+
+        <div _ngcontent-c4="" class="col-md-6">
+
+   <div class="container">
+    <div class="row">
+      <div class="col-xl-12" id="main">
+        <h4>Top 3 benefits of Professional 3D Interior Rendering in Your Design Project</h4>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h6 class="panel-title" style="padding-top: 3%; padding-bottom: 3%;">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1. Offer the complete experience
+              </a>
+              </h6>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <p>
+                  Developing an interior rendering using 3D technology reduces effort from the client’s side because they receive detailed renders visualizing their interior design.
+
+                  A professional 3D interior rendering service would be able to take you through the entire designing process until you get the final product.
+
+                  At Empire Render, we use images of real furniture, textures, colours, and materials. This way, you can be sure that 3D interior rendering will look just like any real-life space in London, UK.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h6 class="panel-title" style="padding-top: 3%; padding-bottom: 3%;">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. Better Marketing and Sales
+              </a>
+              </h6>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse int.description" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                3D interior renderings are your new salespeople. They have often used to market luxury residential and commercial interior projects. This positively affects buyers or stakeholders and leaves a mark as they can analyze every detail of the interior project.
+
+                For instance, for handbooks for builders who work on the design. Furthermore, renders can serve as reference guides with step-by-step instructions for the project realization. Also, you can use 3D interior visualisations for impressive presentations of ideas to clients.
+            </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h6 class="panel-title" style="padding-top: 3%; padding-bottom: 3%;">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. Save Time & Cost
+              </a>
+              </h6>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                The 3D rendering process helps in accelerating the project timeline. Nevertheless, you should make sure that it is done by an experienced local London business like Empire Render.
+
+                Interior renderings have shifted architects from the mood boards era and given better and faster options. Creating 3D interior renderings is easy on the pocket of the stakeholders. It is more convenient and economical to design 3D visualisations than to build interior furniture.
+                
+                In most projects, clients want to suggest changes while on the job, and it leads to the added expenses. Our interior rendering services near you creates multiple designs and then allows you to rework them without spending money on the actual material.
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div _ngcontent-c4=""  class='faq-content-fix' data-aos='fade-right'>
+
+  <strong>Frequentyl Asked Question</strong></div>
+
+ <div class="card card-faq-fix">
+ <div class="card-body" > 
+
+  <div _ngcontent-c4=""  style="margin-top: 2%;">
+   <div _ngcontent-c4="" >   
+       <div _ngcontent-c4="" >
+
+  <div class="container">
+   <div >
+     <div  id="main">
+       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+         <div class="panel panel-default panel-faq">
+           <div class="panel-heading" role="tab" id="headingFaqOne">
+             <h6 class="panel-title" >
+               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqOne" aria-expanded="true" aria-controls="collapsFaqeOne">
+                WHAT IS INCLUDED IN OUR 3D FLOOR PLAN DELIVERABLE?
+             </a>
+             </h6>
+           </div>
+           <div id="collapseFaqOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqOne">
+             <div class="panel-body">
+               <p>
+                A 3D Floor Plan includes additional illustrations such as furniture and colours, as well as other features such as interior walls, windows, electrical appliances and sinks and 3 rounds of revisions.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqTwo">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqTwo" aria-expanded="true" aria-controls="collapsFaqeTwo">
+                HOW IS THIS DIFFERENT FROM A 2D FLOOR PLAN?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqTwo">
+            <div class="panel-body">
+              <p>
+                A 3D Floor Plan is much more realistic compared to 2D plans. Additionally, they also serve different purposes; 3D plans help understand the space and are more exact, whereas 2D plans are generally used to see the size of the property.               </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqThree">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">
+                WHAT IS THE ADVANTAGE OF HAVING A 3D FLOOR PLAN?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqThree">
+            <div class="panel-body">
+              <p>
+                Having a 3D Floor Plan, as mentioned earlier, is more exact than a 2D plan. They are also easier to interpret and give a better visualisation of the space available and feel of the property.               </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqFour">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqFour" aria-expanded="true" aria-controls="collapsFaqeFour">
+                WHAT DO I NEED TO PROVIDE?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqFour">
+            <div class="panel-body">
+              <p>
+                For us to get started, we will need your 2D floor plan (either CAD or PDF file) and any specifications of finishings or textures you would like included. Our team will work with you to ensure we have everything we need.                 </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+          <div class="panel-heading" role="tab" id="headingFaqFive">
+            <h6 class="panel-title" >
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFaqFive" aria-expanded="true" aria-controls="collapsFaqFive">
+                HOW MUCH DO OUR 3D FLOOR PLANS COST?
+            </a>
+            </h6>
+          </div>
+          <div id="collapseFaqFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFaqFive">
+            <div class="panel-body">
+              <p>
+                Our prices vary based on the size and requirements of your plan due to their custom nature. If you are interested in receiving a quote, please contact us.              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+

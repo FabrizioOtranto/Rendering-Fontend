@@ -1,0 +1,85 @@
+<section style='margin-top: 5%;'>
+    <main class = 'container container-fix'>
+
+            <div class="card card-fix">
+                <div *ngIf = "formContact.visto == true"> 
+                <div class="card-text card-text-name-fix">
+                    <div class="card-text name" style="color: green"> <strong>{{formContact.firstName}} {{formContact.lastName}}</strong>
+                        <p class = 'date'>{{formContact.date}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf = "formContact.visto == false"> 
+                <div class="card-text card-text-name-fix">
+                    <div class="card-text name" style="color: red"> > <strong>{{formContact.firstName}} {{formContact.lastName}}</strong>
+                        <p class = 'date'>{{formContact.date}}</p>
+                    </div>
+                </div>
+            </div>
+                
+                    <div class="card-text name number" >
+                        <p style="margin-left: 25%;">{{formContact.phoneNumber}}
+                            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎
+                            {{formContact.mail}}</p>
+                    </div>
+                   
+                    <div class="card-text " style='font-size: 100%;'>
+                        <div class ='row'>
+                            <div class = 'card-columns card-column-fix'>
+
+                    <div *ngIf = "formContact.interiorRendering == true"> 
+                        <p class = 'item-fix'> interior Rendering</p>
+                    </div>
+
+                    <div *ngIf = "formContact.exteriorRendering == true"> 
+                        <p class = 'item-fix'> Exterior Rendering</p>
+                    </div>
+
+                    <div *ngIf = "formContact.virtualRendering == true"> 
+                        <p class = 'item-fix'> Virtual Rendering</p>
+                    </div>
+
+                    <div *ngIf = "formContact.productRendering == true"> 
+                        <p class = 'item-fix'> Product Rendering</p>
+                    </div>
+
+                    <div *ngIf = "formContact.aerialRendering == true"> 
+                        <p class = 'item-fix'> Aerial Rendering</p>
+                    </div>
+
+                    <div *ngIf = "formContact.tresDFlorPlan == true"> 
+                        <p class = 'item-fix'> 3D Floor Plan</p>
+                    </div>
+
+                    <div *ngIf = "formContact.tresDVideo == true"> 
+                        <p class = 'item-fix'> 3D Video</p>
+                    </div>
+
+                    <div *ngIf = "formContact.photomontage == true"> 
+                        <p class = 'item-fix'> photomontage</p>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+                <div class = 'card-text description' >
+                    {{formContact.description}}
+                </div>
+            </div>
+</main>
+
+<div class= 'container btn-edit'>
+    <p *ngIf = 'confirm == false'>
+    <a [routerLink]="['/messages/edit', formContact._id]" class="btn btn-primary btn-edit btn-edit">Editar</a>    
+    <a (click) = 'setConfirm(true)' class = 'btn btn-danger left btn-borrar'> Borrar</a>'
+    </p>
+    
+    <p *ngIf = 'confirm == true' class = 'setConfirm'>
+    <span class = 'confirm'>Estas seguro de eliminar este proyecto?</span><br>
+        <a (click) = "setConfirm(false)" class = 'btn btn-default'>cancelar</a>
+        <a (click) = 'deleteMessage(formContact._id)' class = 'btn btn-danger ' [routerLink]="['/messages']"> Eliminar definitivamente</a>'
+    </p>
+</div>
+
+</section>

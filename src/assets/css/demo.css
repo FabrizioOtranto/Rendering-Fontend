@@ -1,0 +1,977 @@
+/*!
+
+=========================================================
+* Now UI Kit Angular - v1.3.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/now-ui-kit-angular
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-angular/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+.tim-row {
+margin-bottom: 20px;
+}
+
+.tim-white-buttons {
+background-color: #777777;
+}
+
+.typography-line {
+padding-left: 25%;
+margin-bottom: 35px;
+position: relative;
+display: block;
+width: 100%;
+}
+
+.typography-line span {
+bottom: 10px;
+color: #c0c1c2;
+display: block;
+font-weight: 400;
+font-size: 13px;
+line-height: 13px;
+left: 0;
+margin-left: 20px;
+position: absolute;
+width: 260px;
+text-transform: none;
+}
+
+.tim-row {
+padding-top: 60px;
+}
+
+.tim-row h3 {
+margin-top: 0;
+}
+
+.switch {
+margin-right: 20px;
+}
+
+#navbar-full .navbar {
+border-radius: 0 !important;
+margin-bottom: 15px;
+z-index: 2;
+}
+
+#menu-dropdown .navbar {
+border-radius: 3px;
+}
+
+#pagination-row .pagination-container {
+height: 100%;
+max-height: 100%;
+display: flex;
+align-items: center;
+}
+
+#icons-row i.now-ui-icons {
+font-size: 30px;
+}
+
+.space {
+height: 130px;
+display: block;
+}
+
+.space-110 {
+height: 110px;
+display: block;
+}
+
+.space-50 {
+height: 50px;
+display: block;
+}
+
+.space-70 {
+height: 70px;
+display: block;
+}
+
+.navigation-example .img-src {
+background-attachment: scroll;
+}
+
+.navigation-example {
+background-position: center center;
+background-size: cover;
+margin-top: 0;
+min-height: 740px;
+height: 100%;
+}
+
+#notifications {
+background-color: #FFFFFF;
+display: block;
+width: 100%;
+position: relative;
+}
+
+.tim-note {
+text-transform: capitalize;
+}
+
+.space-100 {
+height: 100px;
+display: block;
+width: 100%;
+}
+
+.be-social {
+padding-bottom: 20px;
+/*     border-bottom: 1px solid #aaa; */
+margin: 0 auto 40px;
+}
+
+.txt-white {
+color: #FFFFFF;
+}
+
+.txt-gray {
+color: #ddd !important;
+}
+
+.parallax {
+width: 100%;
+height: 570px;
+display: block;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.logo-container .logo {
+overflow: hidden;
+border-radius: 50%;
+border: 1px solid #333333;
+width: 50px;
+float: left;
+}
+
+.logo-container .brand {
+font-size: 16px;
+color: #FFFFFF;
+line-height: 18px;
+float: left;
+margin-left: 10px;
+margin-top: 7px;
+width: 70px;
+height: 40px;
+text-align: left;
+}
+
+.logo-container .brand-material {
+font-size: 18px;
+margin-top: 15px;
+height: 25px;
+width: auto;
+}
+
+.logo-container .logo img {
+width: 100%;
+}
+
+.navbar-small .logo-container .brand {
+color: #333333;
+}
+
+.fixed-section {
+top: 90px;
+max-height: 80vh;
+overflow: scroll;
+position: sticky;
+}
+
+.fixed-section ul {
+padding: 0;
+}
+
+.fixed-section ul li {
+list-style: none;
+}
+
+.fixed-section li a {
+font-size: 14px;
+padding: 2px;
+display: block;
+color: #666666;
+}
+
+.fixed-section li a.active {
+color: #00bbff;
+}
+
+.fixed-section.float {
+position: fixed;
+top: 100px;
+width: 200px;
+margin-top: 0;
+}
+
+.parallax .parallax-image {
+width: 100%;
+overflow: hidden;
+position: absolute;
+}
+
+.parallax .parallax-image img {
+width: 100%;
+}
+
+@media (max-width: 768px) {
+.parallax .parallax-image {
+width: 100%;
+height: 640px;
+overflow: hidden;
+}
+.parallax .parallax-image img {
+height: 100%;
+width: auto;
+}
+}
+
+
+/*.separator{
+content: "Separator";
+color: #FFFFFF;
+display: block;
+width: 100%;
+padding: 20px;
+}
+.separator-line{
+background-color: #EEE;
+height: 1px;
+width: 100%;
+display: block;
+}
+.separator.separator-gray{
+background-color: #EEEEEE;
+}*/
+
+.social-buttons-demo .btn {
+margin-right: 5px;
+margin-bottom: 7px;
+}
+
+.img-container {
+width: 100%;
+overflow: hidden;
+}
+
+.img-container img {
+width: 100%;
+}
+
+.lightbox img {
+width: 100%;
+}
+
+.lightbox .modal-content {
+overflow: hidden;
+}
+
+.lightbox .modal-body {
+padding: 0;
+}
+
+@media screen and (min-width: 991px) {
+.lightbox .modal-dialog {
+width: 960px;
+}
+}
+
+@media (max-width: 991px) {
+.fixed-section.affix {
+position: relative;
+margin-bottom: 100px;
+}
+}
+
+@media (max-width: 768px) {
+.btn,
+.btn-morphing {
+margin-bottom: 10px;
+}
+.parallax .motto {
+top: 170px;
+margin-top: 0;
+font-size: 60px;
+width: 270px;
+}
+}
+
+
+/*       Loading dots  */
+
+
+/*      transitions */
+
+.presentation .front,
+.presentation .front:after,
+.presentation .front .btn,
+.logo-container .logo,
+.logo-container .brand {
+-webkit-transition: all .2s;
+-moz-transition: all .2s;
+-o-transition: all .2s;
+transition: all .2s;
+}
+
+#images h4 {
+margin-bottom: 30px;
+}
+
+#javascriptComponents {
+padding-bottom: 0;
+}
+
+
+/*      layer animation          */
+
+.layers-container {
+display: block;
+margin-top: 50px;
+position: relative;
+}
+
+.layers-container img {
+position: absolute;
+width: 100%;
+height: auto;
+top: 0;
+left: 0;
+text-align: center;
+}
+
+.animate {
+transition: 1.5s ease-in-out;
+-moz-transition: 1.5s ease-in-out;
+-webkit-transition: 1.5s ease-in-out;
+}
+
+.navbar-default.navbar-small .logo-container .brand {
+color: #333333;
+}
+
+.navbar-transparent.navbar-small .logo-container .brand {
+color: #FFFFFF;
+}
+
+.navbar-default.navbar-small .logo-container .brand {
+color: #333333;
+}
+
+.sharing-area {
+margin-top: 80px;
+}
+
+.sharing-area .btn {
+margin: 15px 4px 0;
+}
+
+.section-thin,
+.section-notifications {
+padding: 0;
+}
+
+.section-navbars {
+padding-top: 0;
+}
+
+#navbar .navbar {
+margin-bottom: 20px;
+}
+
+#navbar .navbar-toggler,
+#menu-dropdown .navbar-toggler {
+pointer-events: none;
+}
+
+.section-tabs {
+background: #EEEEEE;
+}
+
+.section-pagination {
+padding-bottom: 0;
+}
+
+.section-download {
+padding-top: 130px;
+}
+
+.section-download .description {
+margin-bottom: 60px;
+}
+
+.section-download h4 {
+margin-bottom: 25px;
+}
+
+.section-examples a {
+text-decoration: none;
+}
+
+.section-examples a+a {
+margin-top: 30px;
+}
+
+.section-examples h5 {
+margin-top: 30px;
+}
+
+.components-page .wrapper>.header,
+.tutorial-page .wrapper>.header {
+height: 500px;
+padding-top: 128px;
+background-size: cover;
+background-position: center center;
+}
+
+.components-page .title,
+.tutorial-page .title {
+color: #FFFFFF;
+}
+
+.brand .h1-seo {
+font-size: 2.8em;
+text-transform: uppercase;
+font-weight: 300;
+}
+
+.brand .n-logo {
+max-width: 100px;
+margin-bottom: 40px;
+}
+
+.invision-logo {
+max-width: 70px;
+top: -2px;
+position: relative;
+}
+
+.creative-tim-logo {
+max-width: 140px;
+top: -2px;
+position: relative;
+}
+
+.section-javascript .title {
+margin-bottom: 0;
+}
+
+.navbar .switch-background {
+display: block;
+}
+
+.navbar-transparent .switch-background {
+display: none;
+}
+
+.section-signup .col .btn {
+margin-top: 30px;
+}
+
+#buttons-row .btn {
+margin-bottom: 10px;
+}
+
+.section-basic {
+padding-top: 0;
+}
+
+.section-images {
+padding-bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+.section-navbars .navbar-collapse {
+display: none !important;
+}
+.send-button2{
+max-width: 50%;
+}
+
+
+
+}
+
+
+/* acordion collapse */
+
+#accordion .panel-heading { padding: 0;}
+#accordion .panel-title > a {
+	display: block;
+	padding: 0.4em 0.6em;
+    outline: none;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before  {
+    content:"-";
+    float: left;
+    font-family: 'Glyphicons Halflings';
+	margin-right :1em;
+}
+
+
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before  {
+    content:"-";
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::after  {
+    content:">";
+    float: right;
+    font-family: 'Glyphicons Halflings';
+	margin-right :1em;
+}
+
+
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::after  {
+    content:">";
+}
+
+.collapse-text{
+    margin-left: 14%;
+    margin-right: 15%;
+    font-size: 130%;
+    text-align: justify;
+}
+
+.collapse-button{
+    font-size: 35%;
+    margin-left: 44%;
+}
+
+/* index */
+.btn-index{
+    width: 40%;
+    margin-left: 26%;
+    margin-top: 10%;
+    }
+
+    .some-our-projects{
+        font-size: 400%; 
+        margin-top: 5%; 
+        margin-left: 45%;
+        width: 55%;
+    }
+    
+
+    .project-carousel{
+        list-style: none; 
+    }
+
+    .index-image{
+        height: 300px;
+        width: 400px;
+    }
+
+    .img-bkg-index{
+        width: 300px;
+    }
+
+    .name-price-index{
+        font-size: 150%;
+    }
+
+    .price-index{
+        float: right;
+        margin-right: 10%;
+    }
+
+    .img-index-price-fix{
+        height: 60%!important;
+        margin-left: 15%;
+        font-size: 250%;
+
+    }
+
+/* forms */
+
+    input[type=text], [type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid gray;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#fname{
+    width: 45%;
+    float: left;
+}
+#lname{
+    width: 45%;
+    float: right;
+}
+
+#email{
+    width: 100%;
+
+}
+
+#number{
+    width: 100%;
+
+}
+
+.formclass{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+#submit{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #eee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.success{
+    background: green;
+    color: white;
+}
+
+.message a{
+    color: white;
+}
+
+.failed{
+    background: red;
+    color: white;
+}
+
+.label-fix{
+    padding-bottom: 5%;
+}
+
+.label-doble-fix{
+    margin-top: 9%;
+}
+
+
+.btn-edit{
+    margin-left: 30%;
+}
+
+.btn-borrar{
+    margin-left: 4%;
+}
+
+.setConfirm{
+    margin-left:28%
+}
+
+.img-fix{
+    width: 300px;
+    height: auto;
+    margin-left: 0%;
+}
+
+
+.img-fix-mini{
+    width: 300px;
+    height: 200px;
+    margin-left: 0%;
+}
+
+.img-fix-3{
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+}
+
+.img-fix-2{
+    width: 85%;
+    height: auto;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    list-style: none;
+}
+
+.image-list{
+list-style: none;
+}
+
+/* projects-portafolio  vistas */
+
+
+.shadow-box{
+    padding-top: 50%;
+    box-sizing: content-box;
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    border-left: 2px solid black;
+    margin-left: 3%;
+    padding-bottom: 0%;
+    font-size: 30px;
+    margin-top: 5%;
+  }
+
+.project{
+	list-style: none;
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+.project-fix{
+    width: 28%;
+	margin-left: 14%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+}
+
+.project-price-fix{
+    margin-bottom: 7%;
+}
+
+.text{
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+
+.card-short{
+    font-size: 150%; 
+    text-align: center;
+}
+
+.card-long{
+    color: #434343;
+    text-align: center;
+
+}
+
+.img-logo{
+    margin-top: 2.5%; 
+    width: 20%; 
+    margin-left: 75px;
+    padding-bottom: 3px;
+}
+
+.img-img-fix{
+    height: 185px;
+}
+
+.text-fix{
+    height: 50px;
+   
+}
+
+.card-columns-fix{
+    margin-left: 0%!important; 
+    margin-right:0% !important; 
+    padding-left: 0%!important; 
+    padding-right: 0% !important;
+}
+
+.container-fix{
+    box-shadow: none; 
+    margin-left: 0% !important
+}
+
+.card-fix{ 
+    background-color: #dddddd;
+}
+
+.texto{
+    padding-top: 1%; 
+    padding-bottom: 1%;
+    margin-left: 30%;
+}
+
+.int.description{
+    font-size: 140%;
+}
+
+
+/* first view */
+
+.project-subtitle-pvista-fix{
+    font-size: 400%;  
+    margin-left: 15%
+}
+
+.card-fix-pvista{
+    background-color: white;
+    box-shadow: 0cm; 
+    margin-left: 7%; 
+}
+
+.card-int-fix-pvista{
+    background-color: white;
+    box-shadow: 0cm; 
+    margin-left: 10%; 
+    margin-top: 0% !important;
+    width: 90%;
+}
+
+
+
+.card-body-pvista-fix{
+    background-color: white; 
+    box-shadow: none; 
+    padding: 0% !important; 
+    padding-bottom: 10%; 
+}
+
+.our-projects{
+    font-size: 400%; 
+    margin-top: 2%; 
+    margin-left: 20%;
+}
+
+
+
+
+/* second view */
+
+.project-subtitle-aerial-fix{
+    font-size: 400%;  
+    margin-left: 23%
+}
+
+.card-title-fix-aerial{
+    background-color: white; 
+    box-shadow: none;
+}
+
+.card-body-fix-aerial{
+    background-color: white; 
+    box-shadow: none; 
+    margin-left: 16%;
+    width: 84%; 
+}
+
+.img-aerial-fix{
+    margin-left: 20%;
+}
+
+.paragraph-fix{
+    font-size: 75%;
+}
+.li-fix{
+    padding-bottom: 4%;
+}
+
+.label-fix-aerial{
+    margin-top: 13%;
+}
+
+.aerial-name{
+    font-size: 50%;
+    text-align: left!important;
+    margin-left: 12%;
+}
+
+/* fourth view */
+
+.video-fix{
+    width: 69%;
+    
+    margin-left: 13%;
+    background-color: white;
+}
+
+.img-fix-for{
+    height: 300px;
+    
+}
+
+
+/* FAQ */
+
+.card-faq-fix{
+    background-color: white; 
+    box-shadow: 0cm; 
+    margin-left: 15%;
+    width: 75%;
+}
+
+.panel-faq{
+    font-size: 150%;
+}
+
+.faq-content-fix{
+    font-size: 400%; 
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+}
+
+/* footer */
+
+
+.link-footer{
+    color: black;
+    }
+    
+.link-footer:hover{
+color: rgb(109, 109, 109);
+}
+
+
+/*animations */
+.btn-animate:hover{
+    font-size: 150%;
+    padding-right: 3%;
+}
+.btn-animate-2:hover{
+    font-size: 110%;
+    padding-right: 3%;
+    width: 45%;
+}
+
+.btn-animate-3:hover{
+    font-size: 180%!important;
+    padding-right: 0%;
+    width: 23%!important;
+}
+
+.separator-animate{
+    scroll-behavior: auto;
+    width: 100px;
+
+}
+
+.transparency{
+    background-color: transparent;
+}

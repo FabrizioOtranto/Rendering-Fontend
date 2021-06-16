@@ -1,0 +1,78 @@
+<section class="section">
+    <div class="container">
+
+        <div class="shadow-box">
+                <p>
+                New <br>
+                <strong id='us'>Project</strong>
+               </p>
+        </div>
+
+        <div class = 'message success' *ngIf = "status == 'success'">
+          <span class = 'success'>El proyecto se ha creado correctamente, puedes verlo <a [routerLink]="['/projects/projects']">aqui</a></span>
+      </div>
+      
+      <div class = 'message' *ngIf = "status == 'failed'">
+         <span class = 'failed'> El proyecto no se ha podido crear</span>
+         </div>
+
+
+<form #projectForm (ngSubmit)="onSubmit(projectForm)" class = 'formclass'>
+
+    <div class="field">
+      <input type="text" name="name" id="fname" placeholder="Name" [(ngModel)]="project.name" required>
+    </div>
+
+    <div class="field">
+        <input type="text" name="category" id="lname" placeholder="Category" [(ngModel)]="project.category" required>
+      </div>
+
+    <div class="field">
+        <input type="text" name="price" id="number" placeholder="Price" [(ngModel)]="project.price" required>
+      </div>
+    <div style='padding-bottom: 5%;'>
+
+      <select class="form-select" name ='view'  aria-label="Default select example" [(ngModel)]="project.view">
+        <option value=1>First view</option>
+        <option value=2>Second view</option>
+        <option value=3>Third view</option>
+        <option value=4>Fourth view</option>
+      </select>
+
+      <div class="field">
+        <input type="text" name="subtitle" placeholder="Subtitle" [(ngModel)]="project.subtitle" required>
+      </div>
+
+      <div class="field">
+        <textarea class="textarea" name="firstP" placeholder="First paragraph" [(ngModel)]="project.firstP" required></textarea>
+      </div>
+
+      <div class="field">
+        <textarea class="textarea" name="secondP" placeholder="Second paragraph" [(ngModel)]="project.secondP" required></textarea>
+      </div>
+
+      <div class="field">
+        <textarea class="textarea" name="thirdP" placeholder="Third paragraph" [(ngModel)]="project.thirdP" required></textarea>
+      </div>
+
+      <div class="field">
+        <textarea class="textarea" name="fourthP" placeholder="Fourth paragraph" [(ngModel)]="project.fourthP" required></textarea>
+      </div>
+
+      <div class="field">
+        <input type="text" name="video" id="mail" placeholder="link video" [(ngModel)]="project.video" required>
+      </div>
+
+    </div>
+    
+    <div class="field">
+      <textarea class="textarea" name="message" placeholder="Tell us about your interest" [(ngModel)]="project.description" required></textarea>
+    </div>
+
+    <button type="submit"  class="btn btn-default">Submit</button>
+
+    
+  </form>
+  
+    </div>
+    </section>
