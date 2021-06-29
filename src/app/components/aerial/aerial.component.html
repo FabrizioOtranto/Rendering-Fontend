@@ -30,18 +30,18 @@
         <div class = 'img img-aerial-fix'>
           <div *ngIf = "miniproject.view == 1">
           <a [routerLink]= "['/project/detail/'+miniproject._id]" class="link-footer">
-        <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+        <img src="https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{miniproject.image[0]}}"/>
       </a> 
     </div>
 
     <div *ngIf = "miniproject.view == 2">
       <a [routerLink]= "['/project/detail/second/'+miniproject._id]" class="link-footer">
-    <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
-  </a> 
-</div>
+        <img src="https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{miniproject.image[0]}}"/>
+      </a> 
+    </div>
       
-      </div>
-      </div>
+    </div>
+    </div>
       
      </li>
     </ul>
@@ -63,7 +63,7 @@
       <div _ngcontent-c4="" class="row" >
           
             <div _ngcontent-c4="" class="col-md-4" >
-              <img _ngcontent-gam-c118="" src="{{url+'get-image/'+project.image[0]}}" alt="Image" class="img-fluid" style=" margin-left: 15%;">
+              <img _ngcontent-gam-c118="" src="https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{project.image[0]}}" alt="Image" class="img-fluid" style=" margin-left: 15%;">
     
           </div>        
           <div _ngcontent-c4="" class="col-md-6">

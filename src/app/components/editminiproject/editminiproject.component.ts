@@ -54,20 +54,15 @@ export class EditminiprojectComponent implements OnInit {
       )
     }
 
-    onSubmit(form:any) {
-
-      // guardar los datos basicos
-           this._miniprojectService.updateMiniProject(this.miniProject).subscribe(
-             async response => {
-                console.log(response)
+     onSubmit (form:any) {
+       this._miniprojectService.updateMiniProject(this.miniProject).subscribe(
+        async response => {
+               
   
                if(response.miniProject){
-                 
-  
-                  if(this.filesToUpload.length >= 1){
-                    
-
-                  this._uploadService.makeFileRequest(Global.url+'upload-images/'+ response.miniProject._id  , [],this.filesToUpload,'image')
+                
+                if(this.filesToUpload.length >= 1){
+                  await this._uploadService.makeFileRequest(Global.url+'uploadminiprojectimage/'+ response.miniProject._id  , [],this.filesToUpload,'image')
                   .then((result:any) =>{
   
                   this.save_miniProject = result.MiniProject

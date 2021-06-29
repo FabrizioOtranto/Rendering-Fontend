@@ -1,6 +1,6 @@
 <section style="margin-top: 5%;">
         <div class="page-header" >
-          <div class="page-header-image" style="background-image:url({{url+'get-image/'+project.image[0]}})"></div>
+          <div class="page-header-image" style="background-image:url(https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{project.image[0]}})"></div>
          
                   <div class="card card-login card-plain " style = 'padding-top: 5%;' >
                     <div _ngcontent-c4="" class="container" style="margin-top: 0%;">
@@ -39,7 +39,7 @@
           <div *ngIf = "miniproject.view == 1">
           <a [routerLink]= "['/project/detail/'+miniproject._id]">
         <div class = 'img-fix-3'>
-        <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+        <img src="https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{miniproject.image[0]}}"/>
       </div>
       </a>
      </div>
@@ -47,7 +47,7 @@
      <div *ngIf = "miniproject.view == 2">
       <a [routerLink]= "['/project/detail/second/'+miniproject._id]">
     <div class = 'img-fix-3'>
-    <img src="{{url+'get-image/'+ miniproject.image[0]}}"/>
+    <img src="https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{miniproject.image[0]}}"/>
   </div>
   </a>
  </div>

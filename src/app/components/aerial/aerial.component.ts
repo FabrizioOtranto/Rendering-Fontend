@@ -23,9 +23,6 @@ export class AerialComponent implements OnInit {
   public project: Project;
   public miniProject: MiniProject;
 
-  public myThumbnail: string = "https://wittlock.github.io/ngx-image-zoom/assets/thumb.jpg";
-  public myFullresImage: string ="https://wittlock.github.io/ngx-image-zoom/assets/fullres.jpg";
-
   constructor(
     private _projectService: ProjectService,
     private _MiniProjectService: MiniprojectService,

@@ -68,13 +68,16 @@ export class EditComponent implements OnInit {
         if(response.project){
           
           // subir la imagen
+          console.log(this.filesToUpload.length)
           if(this.filesToUpload.length >= 1){
 
-           
-          this._uploadService.makeFileRequest(Global.url+'upload-image/'+response.project._id, [],this.filesToUpload,'image')
+          
+
+          this._uploadService.makeFileRequest(Global.url+'uploadprojectimage/'+response.project._id, [],this.filesToUpload,'image')
+          
           .then((result:any) =>{
 
-
+           
             
             this.save_project = result.project
             this.status = 'success'   
@@ -91,7 +94,9 @@ export class EditComponent implements OnInit {
       error =>{
       console.log(<any>error)
     }
+    
     )
+
   }
 
 fileChangeEvent(fileInput:any){

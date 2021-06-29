@@ -21,7 +21,7 @@ export class CreateminiprojectComponent implements OnInit {
     private _miniprojectService: MiniprojectService,
     private _uploadService: UploadService
   ) { 
-  this.miniProject = new MiniProject('','','','',0,{})
+  this.miniProject = new MiniProject('','','','',1,{})
   this.status = ''
   this.filesToUpload = []
   this.save_miniProject = ''
@@ -57,7 +57,6 @@ export class CreateminiprojectComponent implements OnInit {
      
         }else{
           this.status = 'failed'
-          console.log(response.miniproject)
         }
       },
       error =>{

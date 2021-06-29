@@ -561,7 +561,7 @@ max-width: 50%;
     margin-top: 10%;
     }
 
-    .some-our-projects{
+    .some-our-tts{
         font-size: 400%; 
         margin-top: 5%; 
         margin-left: 45%;
@@ -724,6 +724,12 @@ input[type=submit]:hover {
     margin-bottom: 0%;
     padding-bottom: 0%;
     list-style: none;
+}
+
+.img-fix-detail{
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
 }
 
 .image-list{
@@ -915,6 +921,75 @@ list-style: none;
     height: 300px;
     
 }
+
+/* messages */
+
+.project-message{
+	list-style: none;
+	width: 28%;
+	margin-left: 30%;
+	margin-right: 10%;
+	margin-bottom: 3%;
+  }
+
+
+  .container-message-fix{
+    box-shadow: none; 
+    margin-left: 20% !important;
+     margin-top: 12%;
+  }
+  .card-message-fix{
+    width: 60rem; 
+    background-color: #dddddd
+  }
+
+  .card-text-name-fix{
+    margin-bottom: 1% !important; 
+    padding: 1%; 
+    border-bottom: 1px solid black;
+  }
+  
+  .name{
+    text-align: left;
+    padding-left: 5%;
+    font-size: 150%
+  }
+
+  .date{
+    float: right;
+    padding-right: 5%; 
+  }
+
+  .number{
+    font-size: 100%; 
+    border-bottom: 1px solid black; 
+    padding: 1.5%;
+  }
+
+  .card-column-fix{
+    margin-left: 15%!important; 
+    margin-bottom: 1%; 
+    width: 120%!important;
+    margin-top: 1%;
+  }
+
+  .mail{
+    float: right;
+    padding-right: 5%!important;
+  }
+
+  .description{
+    padding-left: 2%; 
+    padding-right: 2%; 
+    padding-bottom: 3%;
+    color: rgb(26, 25, 25);
+    
+  }
+
+  .link-fix{
+    text-align: center;
+    
+  }
 
 
 /* FAQ */
