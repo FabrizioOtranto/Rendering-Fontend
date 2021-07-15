@@ -11,7 +11,7 @@ import * as AOS from 'aos'
 @Component({
   selector: 'app-primer-vista',
   templateUrl: './primer-vista.component.html',
-  styleUrls: ['./primer-vista.component.css'],
+  styleUrls: [],
   providers: [ProjectService, MiniprojectService],
   animations: [fade]
 })

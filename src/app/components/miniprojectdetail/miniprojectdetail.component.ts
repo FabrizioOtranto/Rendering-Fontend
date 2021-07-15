@@ -8,7 +8,7 @@ import { fade } from '../animations/animations';
 @Component({
   selector: 'app-miniprojectdetail',
   templateUrl: './miniprojectdetail.component.html',
-  styleUrls: ['./miniprojectdetail.component.css'],
+  styleUrls: [],
   providers: [MiniprojectService],
   animations:[fade]
 })

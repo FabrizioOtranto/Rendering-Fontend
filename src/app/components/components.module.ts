@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
-import { NavigationComponent } from './navigation/navigation.component';
 import { ComponentsComponent } from './components.component';
 import { NgbdModalBasic } from './modal/modal.component';
 import { PricesComponent } from './prices/prices.component';
@@ -39,7 +38,6 @@ import { IndexComponent } from './index/index.component';
       ],
     declarations: [
         ComponentsComponent,
-        NavigationComponent,
         NgbdModalBasic,
         PricesComponent,
         CreateComponent,

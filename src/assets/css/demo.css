@@ -595,7 +595,13 @@ max-width: 50%;
         height: 60%!important;
         margin-left: 15%;
         font-size: 250%;
+    }
 
+    .some-our-projects{
+        font-size: 400%; 
+        margin-top: 3%; 
+        margin-left: 45%;
+        width: 55%;
     }
 
 /* forms */
@@ -1049,4 +1055,8 @@ color: rgb(109, 109, 109);
 
 .transparency{
     background-color: transparent;
+}
+
+.img-nav-logo{
+    width: 10%;
 }

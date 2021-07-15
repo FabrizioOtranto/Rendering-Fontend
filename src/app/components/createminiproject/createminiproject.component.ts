@@ -7,7 +7,7 @@ import { Global } from "../../services/global"
 @Component({
   selector: 'app-createminiproject',
   templateUrl: './createminiproject.component.html',
-  styleUrls: ['./createminiproject.component.css'],
+  styleUrls: [],
   providers: [MiniprojectService, UploadService]
 })
 export class CreateminiprojectComponent implements OnInit {

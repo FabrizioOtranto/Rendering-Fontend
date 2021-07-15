@@ -8,7 +8,7 @@ import {Router,ActivatedRoute, Params} from '@angular/router'
 @Component({
   selector: 'app-formcontactdetail',
   templateUrl: './formcontactdetail.component.html',
-  styleUrls: ['./formcontactdetail.component.css'],
+  styleUrls: [],
   providers: [FormContactService]
 })
 export class FormcontactdetailComponent implements OnInit {

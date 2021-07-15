@@ -7,7 +7,7 @@ import { Global } from "../../services/global"
 @Component({
   selector: 'app-formcontacts',
   templateUrl: './formcontacts.component.html',
-  styleUrls: ['./formcontacts.component.css'],
+  styleUrls: [],
   providers: [FormContactService]
 })
 export class FormcontactsComponent implements OnInit {

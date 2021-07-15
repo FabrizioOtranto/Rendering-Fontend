@@ -6,7 +6,7 @@ import { Global } from '../../services/global';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css'],
+  styleUrls: [],
   providers: [ProjectService]
 })
 export class PortfolioComponent implements OnInit {

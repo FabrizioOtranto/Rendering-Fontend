@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-import { ComponentsComponent } from './components/components.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
@@ -48,7 +47,6 @@ const routes: Routes =[
     { path: 'messages',                     component: FormcontactsComponent, canActivate: [AuthGuard]},
     { path: 'messages/:id',                 component: FormcontactdetailComponent, canActivate: [AuthGuard]},
     { path: 'messages/edit/:id',            component: FormcontacteditComponent,  canActivate: [AuthGuard]},
-    { path: 'subindex',                     component: ComponentsComponent},
     { path: '**',                           component: ErrorComponent}
 ];
 

@@ -17,11 +17,14 @@ export class LoginComponent implements OnInit {
     data : Date = new Date();
     focus;
     focus1;
+    public status: string;
 
     constructor(
         public Authservice: AuthService,
         private router: Router
-    ) { }
+    ) { 
+      this.status = ''
+    }
 
     ngOnInit() {
       
@@ -31,31 +34,16 @@ export class LoginComponent implements OnInit {
             this.Authservice.login(this.user)
             .subscribe(
               (res:any) =>{
+                if(res.token){
                 localStorage.setItem('token', res.token)
                 localStorage.setItem('user',res.user2.user)
+                this.router.navigate(['/index'])
+                }
               },
               err =>{console.log(err)}
               ) 
-            this.router.navigate(['/index'])
+              this.status = 'failed'
           }
           
         }
         
-
-        /*
-        var body = document.getElementsByTagName('body')[0];
-        body.classList.add('login-page');
-
-        var navbar = document.getElementsByTagName('nav')[0];
-        navbar.classList.add('navbar-transparent');
-    }
-    ngOnDestroy(){
-        var body = document.getElementsByTagName('body')[0];
-        body.classList.remove('login-page');
-
-        var navbar = document.getElementsByTagName('nav')[0];
-        navbar.classList.remove('navbar-transparent');
-    }
-
-}
-*/

@@ -5,6 +5,7 @@
     <div class="container">
         <div class="col-md-4 mx-auto">
             <div class="card card-login card-plain " style = 'padding-top: 30%;' >
+
                 <form #userForm = 'ngForm' (ngSubmit)='login()'>
                     <div class="card-header text-center">
                         <div class="logo-container" >
@@ -14,6 +15,7 @@
 
                         </p>
                     </div>
+                    
                     <div class="content">
                       <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus===true}">
                         <div class="input-group-prepend">
@@ -28,6 +30,9 @@
                           <input type="password" [(ngModel)]='user.password' name ='password' placeHolder = 'paswword' class="form-control" (focus)="focus1=true" (blur)="focus1=false"/>
                         </div>
                     </div>
+                    <div class = 'message' *ngIf = "status == 'failed'">
+                        <span class = 'failed'> User or password are incorrect</span>
+                        </div>
                     <div class="footer text-center">
                         <input type="submit" value = "login" class="btn btn-primary btn-round btn-lg btn-block" (blur)="focus1=false"/>
                     </div>

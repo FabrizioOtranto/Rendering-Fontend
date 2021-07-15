@@ -8,7 +8,7 @@ import * as AOS from 'aos'
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css'],
+  styleUrls: [],
   providers: [ProjectService]
 })
 export class IndexComponent implements OnInit {
@@ -33,6 +33,7 @@ export class IndexComponent implements OnInit {
       duration:3000
   });
     
+  
   }
 
   getProjects(){

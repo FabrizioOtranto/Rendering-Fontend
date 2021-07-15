@@ -11,7 +11,7 @@ import * as AOS from 'aos'
 @Component({
   selector: 'app-video3-d',
   templateUrl: './video3-d.component.html',
-  styleUrls: ['./video3-d.component.css'],
+  styleUrls: [],
   providers: [ProjectService],
 })
 export class Video3DComponent implements OnInit {

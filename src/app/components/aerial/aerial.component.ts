@@ -11,7 +11,7 @@ import * as AOS from 'aos'
 @Component({
   selector: 'app-aerial',
   templateUrl: './aerial.component.html',
-  styleUrls: ['./aerial.component.css'],
+  styleUrls: [],
   providers: [ProjectService, MiniprojectService],
   animations: [
   fade

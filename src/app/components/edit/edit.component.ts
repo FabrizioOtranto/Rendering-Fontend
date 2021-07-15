@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-edit',
   templateUrl: 'edit.component.html',
-  styleUrls: ['./edit.component.css'],
+  styleUrls: [],
   providers: [ProjectService, UploadService]
 })
 export class EditComponent implements OnInit {

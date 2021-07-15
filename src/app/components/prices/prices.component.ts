@@ -9,7 +9,7 @@ import * as AOS from 'aos'
 @Component({
   selector: 'app-prices',
   templateUrl: './prices.component.html',
-  styleUrls: ['./prices.component.css'],
+  styleUrls: [],
   providers: [ProjectService],
   animations: [fade]
 })

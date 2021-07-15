@@ -6,7 +6,7 @@ import { Global } from '../../services/global';
 @Component({
   selector: 'app-projects-admin',
   templateUrl: './projects-admin.component.html',
-  styleUrls: ['./projects-admin.component.css'],
+  styleUrls: [],
   providers: [ProjectService]
 
 })

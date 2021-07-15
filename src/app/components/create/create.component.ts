@@ -8,7 +8,7 @@ import * as $ from 'jquery'
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
-  styleUrls: ['./create.component.css'],
+  styleUrls: [],
   providers: [ProjectService, UploadService]
 })
 export class CreateComponent implements OnInit {

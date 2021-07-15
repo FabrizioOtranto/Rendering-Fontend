@@ -1,17 +1,20 @@
 <section>
-  
+
 <div _ngcontent-c4="" class="" style="margin-top: 5%; width: 98%;">
     <div _ngcontent-c4="" class="row">
         <div _ngcontent-c4="" class="col-md-4">
+          <div *ngIf = 'project'>
             <div  _ngcontent-c4=""  style='font-size: 400%; margin-top: 10%; margin-left: 30%;' data-aos="zoom-in-down">
                 {{project.name}}</div>
-
+              </div>
         </div>
         <div class="card " style="width: 55rem; background-color: white; box-shadow: none;margin-top: 2%; font-size: 120%; text-align: left; " >
             <div class="card-body" >
+              <div *ngIf = 'project'>
                     <p class = 'card-text card-long'data-aos='zoom-in-up'>
                         {{project.description}}
                     </p>
+                  </div>
             </div>
             
         </div>
@@ -49,11 +52,10 @@
 </div>
 </div>
 
-
 <div _ngcontent-c4=""  class = 'project-subtitle-aerial-fix'>
-
+<div *ngIf = 'project'>
   <strong>{{project.subtitle}}</strong>
- 
+</div>
  </div>
 
   <div class="card card-body-fix-aerial">
@@ -63,8 +65,9 @@
       <div _ngcontent-c4="" class="row" >
           
             <div _ngcontent-c4="" class="col-md-4" >
+              <div *ngIf = 'project'>
               <img _ngcontent-gam-c118="" src="https://profile-picture-upload-rendering.s3.sa-east-1.amazonaws.com/{{project.image[0]}}" alt="Image" class="img-fluid" style=" margin-left: 15%;">
-    
+            </div>
           </div>        
           <div _ngcontent-c4="" class="col-md-6">
   
@@ -119,8 +122,6 @@
   </div>
   </div>
 
-
-  
 <div _ngcontent-c4="" class='faq-content-fix' style = 'margin-left: 24%' data-aos='fade-right'>
 
   <strong>Frequentyl Asked Question</strong></div>

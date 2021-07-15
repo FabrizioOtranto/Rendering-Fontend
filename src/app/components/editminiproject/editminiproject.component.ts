@@ -8,7 +8,7 @@ import {Router,ActivatedRoute, Params} from '@angular/router'
 @Component({
   selector: 'app-editminiproject',
   templateUrl: './editminiproject.component.html',
-  styleUrls: ['./editminiproject.component.css'],
+  styleUrls: [],
   providers: [MiniprojectService, UploadService]
 })
 export class EditminiprojectComponent implements OnInit {
