@@ -3,7 +3,7 @@
     <div class="container">
       <div class="dropdown button-dropdown">
         <div ngbDropdown>
-            <a class="nav-link" ngbDropdownToggle [routerLink]= "['/index']" [routerLinkActive]="['actived']">
+            <a class="nav-link" id = 'logo' ngbDropdownToggle [routerLink]= "['/index']" [routerLinkActive]="['actived']">
             <img _ngcontent-gam-c118="" src="assets/img/logo-square.jpg" alt="Image" class="img-fluid img-nav-logo card animate__animated animate__zoomInDown animate__delay-4s">
           </a>
          </div>
@@ -18,9 +18,9 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <div class="btn-group nav-item">
-                  <a class = 'nav-link' type="button"  [routerLink]= "['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
+                  <a class = 'nav-link' type="button" id='portfolio' [routerLink]= "['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
                   <a type="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu" id='dropdown-menu'>
                       
                       <div *ngFor="let project of projects" class="project">
                         <div *ngIf = "project.view == 1">
@@ -50,51 +50,51 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" [routerLink]= "['/examples/login']" [routerLinkActive]="['actived']">
+                <a class="nav-link" id='login'[routerLink]= "['/examples/login']" [routerLinkActive]="['actived']">
                     <p>Login</p>
                   </a>
               </li>
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]= "['/prices']" [routerLinkActive]="['actived']">
+                  <a class="nav-link" id='price' [routerLink]= "['/prices']" [routerLinkActive]="['actived']">
                       <p>Price</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]= "['/about']" [routerLinkActive]="['actived']">
+                  <a class="nav-link" id='about'[routerLink]= "['/about']" [routerLinkActive]="['actived']">
 
                         <p>About us</p>
                     </a>
                 </li>
                         <li class="nav-item">
-                    <a class="nav-link" [routerLink]= "['/contact']" [routerLinkActive]="['actived']">
+                    <a class="nav-link" id='contact'[routerLink]= "['/contact']" [routerLinkActive]="['actived']">
                         <p>contact</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                    <p class="d-lg-none d-xl-none">Twitter</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
-                    <p class="d-lg-none d-xl-none">Facebook</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <p class="d-lg-none d-xl-none">Instagram</p>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <jjva-ngx-whatsapp-button class = 'nav-link'[ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"
-                  style='padding: 0.3rem 0.8rem;'>
-                  </jjva-ngx-whatsapp-button>
-                  
-                </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  id='twitter' rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                      <p class="d-lg-none d-xl-none">Twitter</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  id='facebook' rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                      <i class="fab fa-facebook-square"></i>
+                      <p class="d-lg-none d-xl-none">Facebook</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  id='instagram' rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                      <p class="d-lg-none d-xl-none">Instagram</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+  
+                    <jjva-ngx-whatsapp-button class = 'nav-link' id='whatsapp' rel="tooltip"data-placement="bottom" [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"
+                    style='padding: 0.3rem 0.8rem;'></jjva-ngx-whatsapp-button>
+                    
+                  </li>
             </ul>
         </div>
     </div>
@@ -107,7 +107,7 @@
     <div class="container">
       <div class="dropdown button-dropdown">
         <div ngbDropdown>
-          <a class="nav-link" ngbDropdownToggle [routerLink]= "['/index']" [routerLinkActive]="['actived']">
+          <a class="nav-link" id='logo'ngbDropdownToggle [routerLink]= "['/index']" [routerLinkActive]="['actived']">
             <img _ngcontent-gam-c118="" src="assets/img/logo-square.jpg" alt="Image" class="img-fluid img-nav-logo card animate__animated animate__zoomInDown animate__delay-4s" id = 'animate' >
           </a>
          </div>
@@ -126,9 +126,9 @@
              
 
                       <div class="btn-group nav-item">
-                        <a class = 'nav-link' type="button"  [routerLink]= "['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
+                        <a class = 'nav-link' id='portfolio' type="button"  [routerLink]= "['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
                         <a type="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <div class="dropdown-menu">
+                          <div class="dropdown-menu"id='dropdown-menu'>
                             <div *ngFor="let project of projects" class="project">
                               <div *ngIf = "project.view == 1">
                               <a class="dropdown-item"[routerLink]= "['/pvista/'+project._id]" 
@@ -159,15 +159,15 @@
 
 
                     <div class="btn-group nav-item">   
-                      <a type="button" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                      <a type="button" class="nav-link" id='create' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                         Create
                         <div class="dropdown-menu"style="color: black!important;">
                          
                            
-                            <a class="dropdown-item"[routerLink]= "['/create/project']" 
+                            <a class="dropdown-item" id='createp' [routerLink]= "['/create/project']" 
                             [routerLinkActive]="['actived']" >Create Project</a>
 
-                            <a class="dropdown-item"[routerLink]= "['/create/miniproject']" 
+                            <a class="dropdown-item" id='createmp' [routerLink]= "['/create/miniproject']" 
                             [routerLinkActive]="['actived']">Create MiniProject</a>
 
                         </div>
@@ -176,15 +176,15 @@
                     </div>
 
                     <div class="btn-group nav-item">
-                      <a type="button" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a type="button" class="nav-link" id='project' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                         <div class="dropdown-menu">
                          
                            
-                            <a class="dropdown-item"[routerLink]= "['/projects/projects']" 
+                            <a class="dropdown-item" id='projects' [routerLink]= "['/projects/projects']" 
                             [routerLinkActive]="['actived']"> Projects</a>
 
-                            <a class="dropdown-item"[routerLink]= "['/projects/miniprojects']" 
+                            <a class="dropdown-item" id='miniprojects' [routerLink]= "['/projects/miniprojects']" 
                             [routerLinkActive]="['actived']"> MiniProjects</a>
 
                         </div>
@@ -192,56 +192,56 @@
                      
                     </div>
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]= "['/messages']" [routerLinkActive]="['actived']" id = 'messagess'>
-                    <p id = 'message'>messages</p>
+                  <a class="nav-link" id='messages' [routerLink]= "['/messages']" [routerLinkActive]="['actived']">
+                    <p>messages</p>
                   </a>
               </li>
                  
              
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]= "['/prices']" [routerLinkActive]="['actived']">
+                  <a class="nav-link" id='price' [routerLink]= "['/prices']" [routerLinkActive]="['actived']">
                       <p>Price</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]= "['/about']" [routerLinkActive]="['actived']">
+                  <a class="nav-link"  id='about' [routerLink]= "['/about']" [routerLinkActive]="['actived']">
 
                         <p>About us</p>
                     </a>
                 </li>
                         <li class="nav-item">
-                    <a class="nav-link" [routerLink]= "['/contact']" [routerLinkActive]="['actived']">
+                    <a class="nav-link"  id='contact' [routerLink]= "['/contact']" [routerLinkActive]="['actived']">
                         <p>contact</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                  <a class="nav-link"  id='twitter' rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
                     <i class="fab fa-twitter"></i>
                     <p class="d-lg-none d-xl-none">Twitter</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                  <a class="nav-link"  id='facebook' rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                     <p class="d-lg-none d-xl-none">Facebook</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                  <a class="nav-link"  id='instagram' rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <p class="d-lg-none d-xl-none">Instagram</p>
                   </a>
                 </li>
                 <li class="nav-item">
 
-                  <jjva-ngx-whatsapp-button class = 'nav-link'rel="tooltip"data-placement="bottom" [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"
+                  <jjva-ngx-whatsapp-button class = 'nav-link' id='whatsapp' rel="tooltip"data-placement="bottom" [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"
                   style='padding: 0.3rem 0.8rem;'></jjva-ngx-whatsapp-button>
                   
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="LogOut" style = 'cursor:pointer' (click)='AuthService.logOut()'>
+                  <a class="nav-link" id='logout' rel="tooltip" title="LogOut" style = 'cursor:pointer' (click)='AuthService.logOut()'>
                     <i class="now-ui-icons users_single-02"></i>
                     <p class="d-lg-none d-xl-none">LogOut</p>
                   </a>
